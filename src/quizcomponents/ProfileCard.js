@@ -18,7 +18,7 @@ const styles = {
     width: '250px',
     textAlign: 'center',
     margin: '20px auto',
-    backgroundColor: 'rgb(51 47 47)',
+    backgroundColor: 'rgb(249 247 247)',
     boxShadow: 'rgb(229 229 229)',
     
     
