@@ -1,23 +1,23 @@
 import logo from './logo.svg';
+import CounterApp from './quizcomponents/CounterApp';
+import ProfileCard from './quizcomponents/ProfileCard';
 import './App.css';
 
+
 function App() {
+  const styles = {
+    appHeader: {
+       backgroundColor: '#375695',
+         minHeight: '100vh'
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+        <header style={styles.appHeader}>
+        <CounterApp />
+      <ProfileCard name="Wassam" age={21} profession="Student" />
+        </header>
     </div>
   );
 }
